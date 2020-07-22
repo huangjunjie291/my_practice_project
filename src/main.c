@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<unistd.h>
-#include<time.h>
-//#include"J2H_time.h"
+#include"J2H_time.h"
 
 int main(int argc,char** argv)
 {
