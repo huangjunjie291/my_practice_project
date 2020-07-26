@@ -15,7 +15,7 @@ int main(int argc,char** argv)
     while(1){
         sleep(1);
         PrintNowTimeGMT();
-	    print("OK!all right~\n");
+        print("OK!all right~\n");
     }
     return 0;
 }
