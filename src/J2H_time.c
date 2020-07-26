@@ -4,5 +4,5 @@
 void PrintNowTimeGMT()
 {
     time_t now = time(NULL);
-    printf("GTM: %s\n",ctime(&now));
+    printf("NOW GTM: %s\n",ctime(&now));
 }
