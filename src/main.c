@@ -10,8 +10,8 @@ int main(int argc,char** argv)
     if(fork()>0) exit(0); //run in back
     int logFilefd;
     char* logFilePath;
-    ssprintf(logFilePath,"%s/log/logFile",env("HOME"));
-    logFilefd = open(logFilePath,O_RDWR|O_APPEND|O_CREATE);
+    sprintf(logFilePath,"%s/log/logFile",getenv("HOME"));
+    logFilefd = open(logFilePath,O_RDWR|O_APPEND|O_CREAT);
     while(1){
         sleep(2);
         PrintNowTimeGMT();
