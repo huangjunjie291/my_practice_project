@@ -11,7 +11,7 @@ int main(int argc,char** argv)
     int logFilefd;
     char* logFilePath;
     sprintf(logFilePath,"%s/log/logFile",env("HOME"));
-    logFilefd = open(logFilePath,O_RDWR|O_APPEND|O_CREATE);
+    logFilefd = open(logFilePath,O_RDWR|O_APPEND|O_CREAT);
     while(1){
         sleep(1);
         PrintNowTimeGMT();
