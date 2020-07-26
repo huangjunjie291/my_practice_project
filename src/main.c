@@ -13,7 +13,7 @@ int main(int argc,char** argv)
     sprintf(logFilePath,"%s/log/logFile",getenv("HOME"));
     logFilefd = open(logFilePath,O_RDWR|O_APPEND|O_CREAT);
     while(1){
-        sleep(2);
+        sleep(1);
         PrintNowTimeGMT();
 	sleep(1);
     }
